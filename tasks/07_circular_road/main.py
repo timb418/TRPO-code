@@ -9,7 +9,7 @@ def main():
     if v >= 0:
         print(v * t % mkad_length)
     else:
-        print("-{0}".format(v * t % mkad_length))
+        print(str(v * t % mkad_length).lstrip("-"))
 
 
 if __name__ == "__main__":
