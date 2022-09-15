@@ -4,7 +4,11 @@
 
 
 def main():
-    x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+    try:
+        x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+    except ValueError:
+        exit(1)
+
     if abs(x2 - x1) <= 1 and abs(y2 - y1) <= 1:
         print("YES")
     else:
