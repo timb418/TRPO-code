@@ -4,7 +4,10 @@
 
 
 def main():
-    a, b, c, d = int(input()), int(input()), int(input()), int(input())
+    try:
+        a, b, c, d = int(input()), int(input()), int(input()), int(input())
+    except ValueError:
+        exit(1)
 
     if a == 0 and b == 0:
         print('INF')
