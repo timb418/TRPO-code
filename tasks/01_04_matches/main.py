@@ -17,11 +17,11 @@ class Match:
     def __invert__(self):
         return self.x2 - self.x1
 
-    def __xor__(m1, m2):
-        return max(m1.x2, m2.x2) - min(m1.x1, m2.x1) - ~m1 - ~m2
+    def __xor__(self, m2):
+        return max(self.x2, m2.x2) - min(self.x1, m2.x1) - ~self - ~m2
 
-    def __and__(m1, m2):
-        return m1 ^ m2 <= 0
+    def __and__(self, m2):
+        return self ^ m2 <= 0
 
 
 def solve(*coords):
