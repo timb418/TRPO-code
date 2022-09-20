@@ -9,7 +9,6 @@ def main():
     try:
         for i in range(desired_list_length):
             words.append(input())
-            pass
     except ValueError:
         exit(1)
 
