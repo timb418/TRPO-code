@@ -1,6 +1,7 @@
 # Author: Timur Bagirov
 # Date: 30 September 2022
 # Только квадраты
+import sys
 
 
 def main():
@@ -11,7 +12,10 @@ def main():
 
 
 def squares(counter: int) -> int:
-    input_num = int(input())
+    try:
+        input_num = int(input())
+    except ValueError:
+        sys.exit(1)
     if input_num:
         counter = squares(counter)
     for i in range(1, input_num + 1):
