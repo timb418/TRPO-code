@@ -4,7 +4,7 @@
 # import sys
 #
 #
-# def main():
+# def main.py():
 #     try:
 #         amount = int(input())
 #     except ValueError:
@@ -22,4 +22,4 @@
 #
 #
 # if __name__ == "__main__":
-#     main()
+#     main.py()
